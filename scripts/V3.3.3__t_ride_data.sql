@@ -1,3 +1,5 @@
+DROP TABLE T_RIDE_DATA
+
 create or replace table T_RIDE_DATA
 (id VARCHAR,
  rideable_type VARCHAR,
