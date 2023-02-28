@@ -1,6 +1,6 @@
-DROP TABLE T_RIDE_DATA;
+DROP TABLE TRIP_DATA.T_RIDE_DATA;
 
-create or replace table T_RIDE_DATA
+create or replace table TRIP_DATA.T_RIDE_DATA
 (id VARCHAR,
  rideable_type VARCHAR,
  started_at timestamp,
