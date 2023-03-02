@@ -232,6 +232,6 @@ create or replace task TSK_RUN_CHK_ROW_DIFF_PROC
 --STAGES
 ----------------------------------------
 CREATE OR REPLACE STAGE STG_F1
-  FILE_FORMAT = CSV1;
+  FILE_FORMAT = FMT_CSV1;
   
 -- put file:///D:\Programming\Datasets\archive\lap_times.csv @STG_F1 auto_compress=true;
