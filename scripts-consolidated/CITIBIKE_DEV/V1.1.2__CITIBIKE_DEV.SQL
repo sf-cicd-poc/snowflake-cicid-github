@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE {{ SF_CITIBIKE_DEV_DATABASE }}.CITIBIKE_MART.T_TRIPS
+CREATE OR REPLACE TABLE CITIBIKE_DEV.CITIBIKE_MART.T_TRIPS
 (trip_duration integer,
  start_time timestamp,
  stop_time timestamp,
