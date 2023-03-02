@@ -87,7 +87,7 @@ LATERAL FLATTEN(INPUT => people:people) as a;
 ----------------------------------------
 CREATE SCHEMA IF NOT EXISTS DB_METASTORE;
 
-CREATE TABLE IF NOT EXIST T_CITIBIKE_METASTORE
+CREATE TABLE IF NOT EXISTS T_CITIBIKE_METASTORE
 (ride_id VARCHAR,
  rideable_type VARCHAR,
  started_at timestamp,
