@@ -216,7 +216,7 @@ AS 'SELECT CIRCUITID,
                     COUNTRY,
                     ALT,
                     CASE WHEN IS_ACTIVE = 1 THEN ''TRUE'' ELSE ''FALSE'' END 
-                        FROM CIRCUITS_ACTIVE 
+                        FROM T_CIRCUITS_ACTIVE 
                         ORDER BY 1';
 
 ----------------------------------------
@@ -226,7 +226,7 @@ create or replace task TSK_RUN_CHK_ROW_DIFF_PROC
 	warehouse=COMPUTE_WH
 	schedule='USING CRON 0 6 * * *  US/Central'
 	COMMENT='Scheduled to run daily at 6 AM US/Central'
-	as call CHK_ROW_DIFF_PROC ('F1_DB', 'F1_ANALYTICS', 'CIRCUITS', 'CIRCUITS_ACTIVE');
+	as call CHK_ROW_DIFF_PROC ('F1_DB', 'F1_ANALYTICS', 'T_CIRCUITS', 'T_CIRCUITS_ACTIVE');
 
 ----------------------------------------
 --STAGES
