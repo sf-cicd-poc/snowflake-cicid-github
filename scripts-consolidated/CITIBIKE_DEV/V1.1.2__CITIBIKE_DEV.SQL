@@ -15,3 +15,6 @@ CREATE OR REPLACE TABLE CITIBIKE_DEV.CITIBIKE_MART.T_TRIPS
  user_type string,
  birth_year integer,
  gender integer);
+
+
+ 
