@@ -1,6 +1,6 @@
 CREATE OR REPLACE TABLE CITIBIKE_DEV.CITIBIKE_MART.T_TRIPS
 (trip_duration integer,
- start_time timestamp,
+ start_timee timestamp,
  stop_time timestamp,
  start_station_id integer,
  start_station_name string,
@@ -22,4 +22,3 @@ CREATE OR REPLACE TABLE CITIBIKE_DEV.CITIBIKE_MART.T_TRIPS
 
 
 
- 
